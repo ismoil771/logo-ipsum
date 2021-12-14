@@ -1,0 +1,387 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --textColor: #696871;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'DMSans', 'Mulish';
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* nav start */
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+
+.nav__link{
+    color: #19191B;
+    margin: 0 25px;
+    transition: .5s;
+    position: relative;
+}
+
+.nav__link::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 0%;
+    left: 0;
+    height: 2px;
+    background: #5454D4;
+    transition: .5s;
+}
+
+.nav__link:hover{
+    color: #5454D4;
+}
+
+.nav__link:hover::after{
+    width: 100%;
+}
+
+.nav__btn{
+    max-width: 210px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background: #FF7143;
+    border: 1px solid #FF7143;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.nav__btn:hover{
+    background: #fff;
+    color: #FF7143;
+    border: 1px solid #FF7143;
+}
+/* nav end */
+
+/* header start */
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.header__content{
+    max-width: 470px;
+    width: 100%;
+}
+
+.header__content-title{
+    font-size: 80px;
+    color: #19191B;
+    line-height: 77px;
+    letter-spacing: 2.5px;
+    margin-bottom: 30px;    
+}
+
+.header__content-txt{
+    font-size: 20px;
+    font-family: 'Mulish';
+    line-height: 30px;
+    letter-spacing: 0.63px;
+    color: var(--textColor);
+    padding-bottom: 50px;
+}
+
+.header__content-btns{
+    display: flex;
+}
+
+.header__content-btn{
+    max-width: 210px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background: #5454D4;
+    border: 1px solid #5454D4;
+    border-radius: 10px;
+    margin-right: 40px;
+    transition: .5s;
+}
+
+.header__content-btn:hover{
+    background: #fff;
+    color: #5454D4;
+    border: 1px solid #5454D4;
+}
+
+.header__content-icon{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    color: #000;
+    border: 1px solid #E7E7E7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__banner{
+    position: relative;
+}
+
+.header__banner-man{
+    z-index: 1;
+}
+
+.header__banner-shelf{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -999;
+}
+
+.header__banner-message{
+    position: absolute;
+    right: -5%;
+    bottom: 10%;
+}
+/* header end */
+
+/* about start */
+
+.about__logos{
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+}
+
+.about__info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 460px;
+    width: 100%;
+}
+
+.about__title{
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56 px;
+}
+
+.about__txt{
+    font-family: 'Mulish';
+    color: var(--textColor);
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+}
+
+.about__link{
+    font-size: 17px;
+    font-family: 'DMSans';
+}
+/* about end */
+
+/* product start */
+
+.product__cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.product__card{
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__card-title{
+    font-size: 24px;
+    font-family: 'DMSans';
+    margin: 20px 0;
+}
+
+.product__card-txt{
+    font-size: 16px;
+    font-family: 'Mulish';
+    line-height: 24px;
+    color: #696871;
+}
+
+.product__plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.product__plan-title{
+    max-width: 523px;
+    width: 100%;
+    font-size: 60px;
+    line-height: 70px;
+    color: #19191B;
+    letter-spacing: -1.88px;
+}
+
+.product__plan-btns{
+    max-width: 370px;
+    width: 100%;
+    background: #F7F7FB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product__plan-btn{
+    width: 50%;
+    text-align: center;
+    padding: 30px 0;
+    color: #19191B;
+    transition: .5s;
+}
+
+.product__plan-btn:hover{
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    background: #5454D4;
+}
+
+.product__plan-btn:nth-of-type(2):hover{
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    background: #5454D4;
+}
+
+
+.product__price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__price-status{
+    max-width: 330px;
+    width: 100%;
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 35px 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+}
+
+.product__price-status:hover{
+    background: #FF7143;
+    transform: scale(1.2);
+}
+
+.product__price-status:hover .product__price-txt , .product__price-status:hover .product__price-title, 
+.product__price-status:hover .price__title-span{
+    color: #fff;
+}
+
+.product__price-status:hover .product__price-btn{
+    background: #9F3919;
+    color: #fff;
+}
+
+.product__price-txt{
+    font-size: 18px;
+    color: #696871;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.product__price-title{
+    font-size: 60px;
+    line-height: 56px;
+    color: #1D293F;
+    margin-bottom: 30px;
+    font-family: 'DMSans';
+}
+
+.price__title-span{
+    font-size: 28px;
+}
+
+.product__price-btn{
+    background: #fff;
+    padding: 20px 100px;
+    border-radius: 10px;
+    transition: .5s;
+}
+/* product end */
+
+/* footer start */
+
+.footer{
+    background: #FF7143;
+}
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__nav{
+    display: flex;
+    padding: 30px 0;
+}
+
+.footer__item{
+    padding: 5px 20px;
+}
+
+.footer__link{
+    color: #fff;
+}
+
+.footer__txt-content{
+    margin-left: 40px;
+    color: #fff;
+}
+/* footer end */
